@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- reset css -->
+<link rel="stylesheet" href="./assets/css/reset.css">
+<!-- styles -->
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<title>BIO ECO</title>
+</head>
+<body>
+<!-- header section starts here-->
+<div class="header">
+  <h1 class="header__logoH1">
+    <a class="header__logo" title="BIOECO" href="index.html"></a>
+  </h1>
+  <div class="header__navbar" >
+    <ul class="header__navbarul">
+      <li> <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
+      <li> <a class="header__navbarlist" href="products.html" title="products">Products</a></li>
+      <li> <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- header section ends here-->
+ <div class="contact">
+      <div class="contact__main">
+          <h1 class="contact__heading">Contact Us </h1>
+          <input type="text" name="name" placeholder="Your Name" class="contact__input" id="name">
+          <input type="text" name="email" placeholder="Your Email" class="contact__input" id="email">
+          <input type="number" min="0" max="100" name="Phoneno" placeholder="Your Phone " class="contact__input" id="phoneno">
+          <input type="text" name="message" placeholder="message" class="contact__input" id="message"><br>
+            <p class='contact__errMsg' id="errname" style="display:none;">Please enter the name</p> 
+            <p class='contact__errMsg' id="erremail" style="display:none;">Please enter the email</p> 
+            <p class='contact__errMsg' id="errphoneno" style="display:none;">Please enter the phone no</p> 
+            <p class='contact__errMsg' id="errmsg" style="display:none;">Please enter the message</p>
+            <p class='contact__sucessmsg' id="success" style="display:none;">Request sent successfully<!-- Thank you for showing interset -->.</p>
+          <button class="contact__button" onclick="Submit()">Send</button>
+      </div>
+     </div>
+<!-- products class over -->
+<div class="footer">
+  <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
+  <div class="footer__menu">
+    <h6>Menu </h6>
+        <ul>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+  </div>
+  <div class="footer__address">
+    <h6>Registered Address </h6>
+    <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
+  </div>
+  <div class="footer__questions">
+    <h6>Have a Questions? </h6>
+     <ul>
+        <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
+        <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
+        </ul>
+  </div>
+  <hr>
+     <p class="footer__copyright">© Copyright 2019 BIOECO</p>
+</div> 
+<script src="./js/main.js"></script> 
+</body>
+
+</html>
