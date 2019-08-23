@@ -74,7 +74,7 @@ src: url(../fonts/Poppins-Regular.ttf);
 /*slider starts here*/
 #slide{
     width:100%;
-    margin-top: 60px;
+    margin-top: 70px;
     }
 .mySlides {
     display: none;
@@ -104,7 +104,7 @@ src: url(../fonts/Poppins-Regular.ttf);
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+   color: rgba(0,0,0,0.8);
 }
 /* Caption text */
 .text {
@@ -326,6 +326,10 @@ margin-top: 15px;
 	font-size: 14px;
     margin-bottom: 0;
 }
+.footer__menulink:hover{
+	text-decoration: none;
+	color: black;
+}
 .footer__menu li a{
 	text-decoration: none;
 	padding-bottom: .5rem!important;
@@ -399,60 +403,51 @@ text-decoration: none;
 	    padding: 75px 35px 20px 35px;
 }
 .product1__1 h1{
-font-size: 40px;
+	font-size: 40px;
     font-weight: 600;
     color: #000;
     font-family: Poppins-Regular;
-    margin-bottom: 1.5rem!important;
+    
     line-height: 1.5;
     text-align: center;
 }
 .product1__1 p{
-	    font-family: OpenSans-Light;
-    font-size: 20px;
+	font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    /* width: 60%; */
-    /* margin: 0 auto; */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product1__composition h1{
-	font-size: 18px;
+	font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
-       color: #82ae46;
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
+    color: #82ae46;
 }
 .product1__composition p{
-	    font-family: OpenSans-Light;
-    font-size: 20px;
+	font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    /* width: 60%; */
-    /* margin: 0 auto; */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product1__content{
 	margin-bottom: 1.5rem;
 }
 .product1__content h1{
-		font-size: 18px;
+	font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
-       color: #82ae46;
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
+    color: #82ae46;
 }
 .product1__content ul li{
-	    font-family: OpenSans-Light;
-    font-size: 20px;
+	font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    /* width: 60%; */
-    /* margin: 0 auto; */
 }
-
 .product1__content li::before {
     content: "• ";
     color: rgb(255, 187, 0);
@@ -461,16 +456,15 @@ font-size: 40px;
 	margin-bottom: 1.5rem;
 }
 .product1__application h1{
-		font-size: 18px;
+	font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
-       color: #82ae46;	
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
+    color: #82ae46;	
 }
 .product1__application p{
-		    font-family: OpenSans-Light;
-    font-size: 20px;
+	font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
 }
@@ -478,20 +472,17 @@ font-size: 40px;
 	margin-bottom: 1.5rem;
 }
 .product1__note1 h1{
-		font-size: 18px;
+	font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
-       color: #82ae46;	
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
+    color: #82ae46;	
 }
 .product1__note1 p{
-		    font-family: OpenSans-Light;
-    font-size: 20px;
+	font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    /* width: 60%; */
-    /* margin: 0 auto; */
     margin-bottom: 1.5rem;
 }
 .product2{
@@ -502,31 +493,32 @@ font-size: 40px;
     font-weight: 600;
     color: #000;
     font-family: Poppins-Regular;
-    margin-bottom: 1.5rem!important;
     line-height: 1.5;
     text-align: center;
 }
 .product2__1 p {
-    font-family: OpenSans-Light;
-    font-size: 20px;
+    font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product2__applicationarea h1, .product2__dosage h1, .product2__note1 h1{
-    font-size: 18px;
+    font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
     color: #82ae46;
 }
 .product2__applicationarea p, .product2__dosage p, .product2__note1 p {
-   font-family: OpenSans-Light;
-    font-size: 20px;
+   font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+.product2__img{
+	text-align: center;
 }
 .brochure_3{
 	width: 60%;
@@ -539,72 +531,65 @@ font-size: 40px;
     font-weight: 600;
     color: #000;
     font-family: Poppins-Regular;
-    margin-bottom: 1.5rem!important;
     line-height: 1.5;
     text-align: center;
 }
 .product3__1 p {
-    font-family: OpenSans-Light;
-    font-size: 20px;
+    font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product3__benefits{
-	margin-bottom: 1.5em;
+	margin-bottom: 1rem;
 }
 .product3__benefits h1 {
-    font-size: 18px;
+    font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
-    color: #82ae46;
+    margin-bottom: 5px;
+ 	font-family: Poppins-Regular;
+ 	color: #82ae46;
 }
 .product3__benefits ul li{
-	    font-family: OpenSans-Light;
-    font-size: 20px;
+	    font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    /* width: 60%; */
-    /* margin: 0 auto; */
 }
 .product3__benefits li::before {
     content: "• ";
     color: rgb(255, 187, 0);
 }
 .product3__application h1{
-    font-size: 18px;
+    font-size: 20px;
     display: block;
-    margin-bottom: 10px;
-    font-family: lora,Georgia,serif;
-    font-style: italic;
+    margin-bottom: 5px;
+    font-family: Poppins-Regular;
     color: #82ae46;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product3__application p {
-    font-family: OpenSans-Light;
-    font-size: 20px;
+    font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
     color: gray;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 table, th, td {
       border: 1px solid gray;
     text-align: center;
- /*   font-family: OpenSans-Light;*/
-     font-family: Poppins-Regular;
-    font-size: 20px;
+     font-family: OpenSans;
+    font-size: 18px;
     line-height: 30px;
-    color: black;
-    margin-bottom: 1.5rem;
-}
-td {
-  height: 50px;
+    color:gray;
+    margin-bottom: 1rem;
 }
 
-
+th, td{
+	padding :10px;
+}
 
 
 /*contact page css here*/
@@ -672,3 +657,4 @@ td {
     cursor: pointer;
     background-color: #15a99c;
 }
+/*about us page*/

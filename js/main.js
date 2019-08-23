@@ -78,15 +78,25 @@ Submit = () =>{
     // }
 if((emailStandard.test(txtEmail.value)== true) && txtname.value.length >=1 && txtMsg.value.length >= 1 && txtEmail.value !== "" && txtname.value !=="" &&  txtMsg.value !=="" && txtNumber.value !== "" ){
         success.style.display="block";
+             var maillink = 'mailto:career@theuxgurus.com?subject=Message from '
+             +document.getElementById('email').value
+             +"&body="
+             +document.getElementById('name').value 
+             +document.getElementById('email').value 
+             +document.getElementById('phoneno').value 
+             +document.getElementById('message').value
+    window.location.href = maillink;
+
         txtEmail.value=""; 
         txtname.value="";
          txtMsg.value="";
         txtNumber.value="";
-       
+          
        
     }
     else {
       success.style.display="none";
+
     }
 }
 
