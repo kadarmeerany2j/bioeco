@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- reset css -->
 <link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- styles -->
 <link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -14,16 +15,19 @@
 <body>
 <!-- header section starts here-->
 <div class="header">
-	<h1 class="header__logoH1">
-		<a class="header__logo" title="BIOECO" href="index.html"></a>
-	</h1>
-	<div class="header__navbar" >
-		<ul class="header__navbarul">
-			<li> <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
-			<li> <a class="header__navbarlist" href="products.html" title="products">Products</a></li>
-			<li> <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
-		</ul>
-	</div>
+  <h1 class="header__logoH1"><a class="header__logo" title="BIOECO" href="index.html"></a></h1>
+  <div class="header__navbar" >
+    <ul class="header__navbarul">
+      <li > <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
+      <li class="dropdown"> <a class="header__navbarlist" href="products.html">products <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+      <a href='products.html?#product1'>product 1</a>
+      <a href='products.html?#product2'>product 2</a>
+      <a href='products.html?#product3'>product 3</a>
+      </div></li>
+      <li > <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
+    </ul>
+  </div>
 </div>
 <!-- header section ends here-->
 <!-- slider show starts here -->
@@ -37,89 +41,77 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
     <a class="next" onclick="plusSlides(1)">&#10095;</a> 
     <div class="dotsmain"> 
-  		<span class="dot" onclick="currentSlide(1)"></span> 
-  		<span class="dot" onclick="currentSlide(2)"></span> 
-  		<span class="dot" onclick="currentSlide(3)"></span>
-  		<span class="dot" onclick="currentSlide(4)"></span>
-  		<span class="dot" onclick="currentSlide(5)"></span>
-  	</div>
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+   </div>
   </div>
 </div>
 <!-- slider show ends here -->
 <!-- welcome page starts here -->
 <div class="welcome">
-    <h1 class="welcome__heading">WELCOME! <br><span class="small">TO BIOECO</span> </h1>
-    <p class="welcome__content">SmartFarm actively pursues its mission of supporting healthy and productive lifestyles for the community while teaching, enhancing, and connecting residents and youth to fresh produce and education about urban gardening. Programs include multiple workshop venues and hands-on gardening opportunities for young people, as well as community garden plots for nearby residents.</p> 
-    <p class="welcome__readmore"><a href="about.html" class="welcome__button">read more</a></p>
+  <h1 class="welcome__heading " >WELCOME!  </h1> 
+  <h2 class="welcome__subheading">TO BIOECO</h2>
+  <p class="welcome__content">SmartFarm actively pursues its mission of supporting healthy and productive lifestyles for the community while teaching, enhancing, and connecting residents and youth to fresh produce and education about urban gardening. Programs include multiple workshop venues and hands-on gardening opportunities for young people, as well as community garden plots for nearby residents.</p> 
+  <button class="welcome__button" onclick="window.location.href='about.html'">Read more</button>
+</div>
+<!-- welcome page ends here -->
+
+<div class="products">
+  <h4 class="products__subheading">Featured Products</h4>
+  <h2 class="products__heading underline-small">Our Products</h2>
+    <div class="products__container">
+      <div class="products__product1">
+        <img src="./assets/images/product1.jpg" class="products__img">
+        <h3 class="product1__heading">Ammosulphonil Ps</h3>
+        <p class="product1__desc">Ammosulphonil Ps is a very potent photosynthetic Bacteria.</p>
+        <a href='products.html?#product1'><button class="welcome__button" >Read more</button></a>
+      </div>
+    <div class="products__product1">
+      <img src="./assets/images/product1.jpg" class="products__img">
+      <h3 class="product1__heading">Argulus-Lernea </h3>
+      <p class="product1__desc">Argulus-Lernea Control is a remedy for fish external parasites.</p>
+      <a href='products.html?#product2'><button class="welcome__button" >Read more</button></a>
+    </div>
+    <div class="products__product1">
+      <img src="./assets/images/product1.jpg" class="products__img">
+      <h3 class="product1__heading">Nitrite Nil</h3>
+      <p class="product1__desc">Nitrite Nil is a natural fast acting microbial solution.</p>
+      <a href='products.html?#product3'><button class="welcome__button" >Read more</button></a>
+    </div>  
   </div>
-  <!-- welcome page ends here -->
- <div class="products">
-   <h4 class="products__subheading">Featured Products</h4>
-   <h2 class="products__heading">Our Products</h2>
-   <p class="products__desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-   <div class="products__container">
-     <div class="products__product1">
-       <img src="./assets/images/product1.jpg" class="products__img">
-       <h3 class="product1__heading">Ammosulphonil Ps</h3>
-       <p class="product1__desc">Ammosulphonil Ps is a very potent photosynthetic Bacteria.</p>
-       <p class="product1__readmore"><a href="products.html" class="product__button">read more</a></p>
-     </div>
-     <div class="products__product1">
-       <img src="./assets/images/product1.jpg" class="products__img">
-       <h3 class="product1__heading">Argulus-Lernea </h3>
-       <p class="product1__desc">Argulus-Lernea Control is a remedy for fish external parasites.</p>
-       <p class="product1__readmore"><a href="products.html" class="product__button">read more</a></p>
-     </div>
-     <div class="products__product1">
-       <img src="./assets/images/product1.jpg" class="products__img">
-       <h3 class="product1__heading">Nitrite Nil</h3>
-       <p class="product1__desc">Nitrite Nil is a natural fast acting microbial solution.</p>
-       <p class="product1__readmore"><a href="products.html" class="product__button">read more</a></p>
-     </div>
-   </div>
- </div>
- <!-- products class over -->
+</div>
+
+<!-- products class over -->
+<!-- footer starts from here -->
 <div class="footer">
-  <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
-  <div class="footer__menu">
-    <h6>Menu </h6>
+  <div class="footer__main">
+    <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
+      <div class="footer__menu">
+        <h6>Menu </h6>
         <ul>
-        <li><a href="about.html" >About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a class="header__navbarlist" href="about.html">About Us</a> </li>
+          <li><a class="header__navbarlist" href="products.html">Products</a></li>
+          <li><a class="header__navbarlist" href="contact.html">Contact Us</a></li>
         </ul>
-  </div>
-  <div class="footer__address">
-    <h6>Registered Address </h6>
-    <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
-  </div>
-  <div class="footer__questions">
-    <h6>Have a Questions? </h6>
-     <ul>
-        <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
-        <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
+      </div>
+      <div class="footer__address"> 
+        <h6>Registered Address </h6>
+        <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
+      </div>
+      <div class="footer__questions">
+        <h6>Have a Questions? </h6>
+        <ul>
+          <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
+          <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
         </ul>
+      </div>
   </div>
   <hr>
-     <p class="footer__copyright">© Copyright 2019 BIOECO</p>
+    <p class="footer__copyright">© Copyright 2019 BIOECO</p>
 </div> 
 <script src="./js/main.js"></script> 
-<!-- ClickDesk Live Chat Service for websites -->
-<script type='text/javascript'>
-var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyEgsSBXVzZXJzGICAsJ7km_sLDA');
-if(document.location.hostname != 'localhost'){
-  var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
-  'http://my.clickdesk.com/clickdesk-ui/browser/');
-  var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-}else{
-  var glcpath = 'http://localhost:8080/clickdesk-ui/browser/';
-  var glcp = 'http://';
-}
-var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
-glcspt.async = true; glcspt.src = glcpath + 'livechat-cloud-new.js';
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
-</script>
-<!-- End of ClickDesk -->
 </body>
-
 </html>
