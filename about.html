@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- reset css -->
 <link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- styles -->
 <link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -14,50 +15,80 @@
 <body>
 <!-- header section starts here-->
 <div class="header">
-	<h1 class="header__logoH1">
-		<a class="header__logo" title="BIOECO" href="index.html"></a>
-	</h1>
-	<div class="header__navbar" >
-		<ul class="header__navbarul">
-			<li> <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
-			<li> <a class="header__navbarlist" href="products.html" title="products">Products</a></li>
-			<li> <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
-		</ul>
-	</div>
+  <h1 class="header__logoH1"><a class="header__logo" title="BIOECO" href="index.html"></a></h1>
+  <div class="header__navbar" >
+    <ul class="header__navbarul">
+      <li class="current"> <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
+      <li class="dropdown"> <a class="header__navbarlist" href="products.html">products <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+      <a href='products.html?#product1'>product 1</a>
+      <a href='products.html?#product2'>product 2</a>
+      <a href='products.html?#product3'>product 3</a>
+      </div></li>
+      <li > <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
+    </ul>
+  </div>
 </div>
 <!-- header section ends here-->
+<!-- about us section starts here -->
+<div class="aboutusbanner">
+  <img src="./assets/images/aboutbanner1.jpg"  class="aboutusbanner__img">
+</div>
 
+<div class="aboutcontain">
+  <h1 class="underline-small">Introduction </h1>
+  <p>Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been 
+    proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.</p>
+  <h1 class="underline-small">More About Us</h1>
+  <p>Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been 
+  proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.</p>
+</div>
 
+<div class="aboutcontain1">
+  <div class="aboutcontain1img"><img src="./assets/images/welcome3.jpg" ></div>
+  <div class="whatwedo">
+    <h1 class="underline-small">What we do </h1>
+    <p>Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been 
+    proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system.</p>
+    <ul>
+      <li>Enhances feeding, growth rate and minimizes FCR.</li>
+      <li>Bacterial enzymes include Amylase, Protease, Lipase etc.</li>
+      <li>Minimizes bad odors and decomposes organic waste. </li>
+      <li>Averts existence of harmful bacteria such as Vibrio Spp.</li>
+      <li>Enhances feeding, growth rate and minimizes FCR.</li>
+      <li>Bacterial enzymes include Amylase, Protease, Lipase etc.</li>
+    </ul>
+  </div>
+</div>
+<!-- about us section ends here -->
 
-
-
-
-
-  <div class="footer">
-  <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
-  <div class="footer__menu">
-    <h6>Menu </h6>
+<!-- footer starts from here -->
+<div class="footer">
+  <div class="footer__main">
+    <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
+      <div class="footer__menu">
+        <h6>Menu </h6>
         <ul>
-        <li><a href="about.html" >About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a class="header__navbarlist" href="about.html">About Us</a> </li>
+          <li><a class="header__navbarlist" href="products.html">Products</a></li>
+          <li><a class="header__navbarlist" href="contact.html">Contact Us</a></li>
         </ul>
-  </div>
-  <div class="footer__address">
-    <h6>Registered Address </h6>
-    <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
-  </div>
-  <div class="footer__questions">
-    <h6>Have a Questions? </h6>
-     <ul>
-        <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
-        <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
+      </div>
+      <div class="footer__address">
+        <h6>Registered Address </h6>
+        <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
+      </div>
+      <div class="footer__questions">
+        <h6>Have a Questions? </h6>
+        <ul>
+          <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
+          <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
         </ul>
+      </div>
   </div>
   <hr>
-     <p class="footer__copyright">© Copyright 2019 BIOECO</p>
+    <p class="footer__copyright">© Copyright 2019 BIOECO</p>
 </div> 
 <script src="./js/main.js"></script> 
 </body>
-
 </html>
