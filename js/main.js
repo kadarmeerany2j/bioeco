@@ -1,3 +1,7 @@
+
+
+
+
 //form validation
 Submit = () =>{ 
     var success= document.getElementById("success");
@@ -81,10 +85,10 @@ if((emailStandard.test(txtEmail.value)== true) && txtname.value.length >=1 && tx
              var maillink = 'mailto:career@theuxgurus.com?subject=Message from '
              +document.getElementById('email').value
              +"&body="
-             +document.getElementById('name').value 
-             +document.getElementById('email').value 
-             +document.getElementById('phoneno').value 
-             +document.getElementById('message').value
+             +"Name:"+document.getElementById('name').value + escape ("\n\n") 
+             +"Email:"+document.getElementById('email').value + escape ("\n\n") 
+             +"PhoneNo:"+document.getElementById('phoneno').value + escape ("\n\n") 
+             +"Message:"+document.getElementById('message').value + escape ("\n\n") 
     window.location.href = maillink;
 
         txtEmail.value=""; 
@@ -151,3 +155,23 @@ function currentSlide(index) {
     slides[index-1].style.display = "block";  
     dots[index-1].className += " active";
 }
+
+$(function(){
+    
+    $("#productleft .productclass").click(function() {
+
+  $(this).addClass("active")
+  $(".productclass").not(this).removeClass("active")
+})
+});
+
+
+// var productleft = document.getElementById("productleft");
+// var productclass = productleft.getElementsByClassName("productclass");
+// for (var i = 0; i < productclass.length; i++) {
+//   productclass[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active1");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active1";
+//   });
+// }
