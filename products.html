@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- reset css -->
 <link rel="stylesheet" href="./assets/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- styles -->
 <link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -14,59 +15,69 @@
 <body>
 <!-- header section starts here-->
 <div class="header">
-  <h1 class="header__logoH1">
-    <a class="header__logo" title="BIOECO" href="index.html"></a>
-  </h1>
+  <h1 class="header__logoH1"><a class="header__logo" title="BIOECO" href="index.html"></a></h1>
   <div class="header__navbar" >
     <ul class="header__navbarul">
       <li> <a class="header__navbarlist" href="about.html" title="about us"> About Us</a></li>
-      <li> <a class="header__navbarlist" href="#" title="products">Products</a></li>
-      <li> <a class="header__navbarlist"  href="contact.html" title="contact us">Contact Us</a></li>
+      <li class="dropdown current"> <a class="header__navbarlist" href="products.html">products <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content" id="productleft1">
+      <a  href='products.html?#product1'>product 1</a>
+      <a  href='products.html?#product2'>product 2</a>
+      <a  href='products.html?#product3'>product 3</a>
+      </div></li>
+      <li > <a class="header__navbarlist" href="contact.html" title="contact us">Contact Us</a></li>
     </ul>
   </div>
 </div>
 <!-- header section ends here-->
-<div class="product1">
+<div class="productleft" id="productleft">
+  <h1> PRODUCTS</h1>
+    <a class="productclass" href="#product1">Product 1</a>
+    <a class="productclass" href="#product2">Product 2</a>
+    <a class="productclass" href="#product3">Product 3</a>
+</div>
+<div class="productright">
+  <div class="product1" id="product1">
   <div class="product1__1">
-  <h1>Ammosulphonil PS</h1>
-  <p>Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been 
+    <h1 class="underline-small">Ammosulphonil PS</h1>
+    <p>Ammosulphonil PS is a very potent Photosynthetic Bacteria. The efficacy has been 
     proven in differerent location at different aquacuture farms. It contains a mixture of bacteria which benefits the culture system. </p>
   </div>
-    <div class="product1__composition">
-  <h1 >Composition </h1>
-  <p> Bacterial Consortia  2 x 109 CFU/ml </p>
-</div>
+  <div class="product1__composition">
+    <h1 >Composition </h1>
+    <p> Bacterial Consortia  2 x 109 CFU/ml </p>
+  </div>
   <div class="product1__content">
-        <h1>Advantages </h1>
-        <ul>
-          <li>Enhances feeding, growth rate and minimizes FCR.</li>
-          <li>Bacterial enzymes include Amylase, Protease, Lipase etc. </li>
-          <li>Minimizes bad odors and decomposes organic waste. </li>
-          <li>Averts existence of harmful bacteria such as Vibrio Spp.</li>
-          <li>Minimizes cost of production by reducing usage of chemicals. </li>
-          <li>Mainly Rhodobacteraceae, Nocardiaceae and other bacterial species are present.</li>
-          <li>Metabolic and feed waste are converted  to Carbon dioxides and Hydrogen.</li>
-          <li>Ammonia, Nitrate and Hydrogen Sulphide toxicity are effectively controlled.</li>
-          <li>Consortia utilises H2S to maintain, regulate pH and optimizes water quality.</li>
-          <li>Stabilizes algal blooms and improves water quality and also maintains the pH level.</li>
-          <li>Bacteria degrades sludge and increases the growth of heterotrophic bacterial.</li>
-        </ul>
-      </div>
-          <div class="product1__application">
-          <h1>Application </h1>
+    <h1>Advantages </h1>
+    <ul>
+    <li>Enhances feeding, growth rate and minimizes FCR.</li>
+    <li>Bacterial enzymes include Amylase, Protease, Lipase etc. </li>
+    <li>Minimizes bad odors and decomposes organic waste. </li>
+    <li>Averts existence of harmful bacteria such as Vibrio Spp.</li>
+    <li>Minimizes cost of production by reducing usage of chemicals. </li>
+    <li>Mainly Rhodobacteraceae, Nocardiaceae and other bacterial species are present.</li>
+    <li>Metabolic and feed waste are converted  to Carbon dioxides and Hydrogen.</li>
+    <li>Ammonia, Nitrate and Hydrogen Sulphide toxicity are effectively controlled.</li>
+    <li>Consortia utilises H2S to maintain, regulate pH and optimizes water quality.</li>
+    <li>Stabilizes algal blooms and improves water quality and also maintains the pH level.</li>
+    <li>Bacteria degrades sludge and increases the growth of heterotrophic bacterial.</li>
+    </ul>
+  </div>
+  <div class="product1__application">
+    <h1>Application </h1>
     <p>5 ltr per Hectare with ONE meter water depth</p>
-  <p>once in every 15 - 20 days or as directed by aquaculture consultant.  </p>
-</div>
-          <div class="product1__note1">
+    <p>once in every 15 - 20 days or as directed by aquaculture consultant.  </p>
+  </div>
+  <div class="product1__note1">
     <h1>Note</h1>
     <p>Shake well before use and once opened it has to be used within a day for best 
-results irrespective of packing size.</p>
-</div>
+    results irrespective of packing size.</p>
+  </div>
 </div>
 
-<div class="product2">
+<div class="product2" id="product2">
   <div class="product2__1">
-    <h1>Argulus - Lernea Control </h1>
+    <h1 class="underline-small">Argulus - Lernea Control </h1>
     <p>Argulus - Lernea Control is a remedy for fish external parasites, which kills carp louse ( Argulus) and anchor worms (Lernea). They can be clearly observed on the skin of fish attacked.  </p>
   </div>
   <div class="product2__applicationarea">
@@ -77,17 +88,18 @@ results irrespective of packing size.</p>
     <h1>Dosage  </h1>
     <p> Mix 500 gm of Argulus-Lernea control in 10 litres of pond water per acre and apply uniformly through the pond. </p>
     <div class="product2__img">
-    <img src="./assets/images/brochure_3.jpg" class="brochure_3"></div>
+      <img src="./assets/images/brochure_3.jpg" class="brochure_3">
+    </div>
   </div>
   <div class="product2__note1">
     <h1>Note</h1>
-    <p>As the activity of the medicinal compounds will be reduced under the influence of light, we advise to start treatment at nightfall. In ponds having a very large biomass the dose can be doubled.</p>
+    <p>As the activity of the medicinal compounds will be reduced under the influence of light, we advise to start treatment at nightfall. In ponds having a very large biomass the dose can be doubled.</p>  
   </div>
 </div>
 
-<div class="product3">
+<div class="product3" id="product3">
   <div class="product3__1">
-    <h1>Nitrite Nil  </h1>
+    <h1 class="underline-small">Nitrite Nil  </h1>
     <p>Nitrite Nil is a natural fast acting microbial solution for Nitrite treatment
     and prevention in shrimp ponds. It is recommended to use Nitrite Nil during pond preparation to reduce the risk of Nitrite buildup in future.</p>
   </div>
@@ -103,75 +115,78 @@ results irrespective of packing size.</p>
   </div>
   <div class="product3__application">
     <h1>Application </h1>
-    <table>
-  <tr>
-    <th rowspan="3">To avert buildup of Hydrogen Sulphide </th>
-    <th>Stage </th>
-    <th>While Pond /Soil preparation </th>
-    <th>During mid crop cyde (35-40 DOC*)</th>
-    <th>During end of crop cyde(90*DOC until harvest)</th>
-  </tr>
-  <tr>
-    <td>Dosage </td>
-    <td>Apply 2 kg/10,000 m2</td>
-    <td>1kg/10,000 m2</td>
-    <td>1kg/10,000 m2 every 7-10 days up till harvest</td>
-  </tr>
-  <tr>
-    <td>Notes </td>
-    <td>Apply to the bottom of wet pond at areas where sludge is present </td>
-    <td>Apply close to aerator for best results</td>
-    <td>Apply in areas where sludge has formed</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Treatment for affected pond</td>
-    <td>Stage </td>
-    <td>1st application</td>
-    <td>2nd Application </td>
-    <td>Track alkalinity </td>
-  </tr>
-  <tr>
-    <td>Dosage </td>
-    <td>2kg/10,000m2</td>
-    <td>1kg/10,000 m2</td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>Notes  </td>
-    <td>Apply when pond soil turns black and develops a bad color</td>
-    <td>Apply after 3-4 days after 1st application</td>
-    <td>For best results maintain alkalinity above 100ppm at each application step</td>
-  </tr>
-</table>
-<p>These are general recommendations. Dosage is also dependant on the local environmental conditions and practices.
-</p>
+      <table>
+        <tr>
+          <th rowspan="3">To avert buildup of Hydrogen Sulphide </th>
+          <th>Stage </th>
+          <th>While Pond /Soil preparation </th>
+          <th>During mid crop cyde (35-40 DOC*)</th>
+          <th>During end of crop cyde(90*DOC until harvest)</th>
+        </tr>
+        <tr>
+          <td>Dosage </td>
+          <td>Apply 2 kg/10,000 m2</td>
+          <td>1kg/10,000 m2</td>
+          <td>1kg/10,000 m2 every 7-10 days up till harvest</td>
+        </tr>
+        <tr>
+          <td>Notes </td>
+          <td>Apply to the bottom of wet pond at areas where sludge is present </td>
+          <td>Apply close to aerator for best results</td>
+          <td>Apply in areas where sludge has formed</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Treatment for affected pond</td>
+          <td>Stage </td>
+          <td>1st application</td>
+          <td>2nd Application </td>
+          <td>Track alkalinity </td>
+        </tr>
+        <tr>
+          <td>Dosage </td>
+          <td>2kg/10,000m2</td>
+          <td>1kg/10,000 m2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Notes  </td>
+          <td>Apply when pond soil turns black and develops a bad color</td>
+          <td>Apply after 3-4 days after 1st application</td>
+          <td>For best results maintain alkalinity above 100ppm at each application step</td>
+        </tr>
+      </table>
+    <p>These are general recommendations. Dosage is also dependant on the local environmental conditions and practices.</p>
   </div>
 </div>
-
+</div>
+<!-- footer starts from here -->
 <div class="footer">
-  <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
-  <div class="footer__menu">
-    <h6>Menu </h6>
+  <div class="footer__main">
+    <div class="footer__logo"><a href="#"><img src="./assets/images/footerlogo.png" alt="BIOECO" class="footer__logoimg"></a></div>
+      <div class="footer__menu">
+        <h6>Menu </h6>
         <ul>
-        <li class="footer__menuli"><a href="about.html" >About Us</a></li>
-        <li class="footer__menulink"><a href="products.html">Products</a></li>
-        <li class="footer__menulink"><a href="contact.html">Contact</a></li>
+          <li><a class="header__navbarlist" href="about.html">About Us</a> </li>
+          <li><a class="header__navbarlist" href="products.html">Products</a></li>
+          <li><a class="header__navbarlist"href="contact.html">Contact Us</a></li>
         </ul>
-  </div>
-  <div class="footer__address">
-    <h6>Registered Address </h6>
-    <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
-  </div>
-  <div class="footer__questions">
-    <h6>Have a Questions? </h6>
-     <ul>
-        <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
-        <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
+      </div>
+      <div class="footer__address">
+        <h6>Registered Address </h6>
+        <p>BioEco Solutions, <br>Yelahanka New Town,<br>Bangalore India</p>
+      </div>
+      <div class="footer__questions">
+        <h6>Have a Questions? </h6>
+        <ul>
+          <li><img src="./assets/images/telephone.png"  class="location"><a class="footer__mail" href="tel:+916363054384">+91 6363054384</a></li>
+          <li><img src="./assets/images/envelope.png"  class="location"><a href="mailto:bioeco.sales@gmail.com" class="footer__mail" >bioeco.sales@gmail.com</a></li>
         </ul>
+      </div>
   </div>
   <hr>
-     <p class="footer__copyright">© Copyright 2019 BIOECO</p>
+    <p class="footer__copyright">© Copyright 2019 BIOECO</p>
 </div> 
+
 <script src="./js/main.js"></script> 
 </body>
 
